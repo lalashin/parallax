@@ -9,6 +9,7 @@ a {text-decoration: none;}
 #nav ul {float: right; padding-right: 10px; }
 #nav ul li {display: inline; }
 #nav ul li a {display: inline-block; padding: 20px 15px; color: #fff; font-weight: bold; font-family: 'Abel'; text-transform: capitalize;}
+#nav ul li.active a {color: #000;}
 
 #contents {text-align: center; color: #fff;}
 #contents > div {height: 100vh; line-height: 100vh;}

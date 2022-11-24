@@ -9,7 +9,7 @@ nav.click(function(e){
     let section = cont.eq(index);          //클릭한 버튼과 컨텐츠를 연결
     let offset = section.offset().top;     //각 컨텐츠의 오프셋 값을 할당
     //alert(offset);
-    $("html, body").animate({scrollTop: offset},600,"easeOutBounce");
+    $("html, body").animate({scrollTop: offset},600,"easeInOutExpo");
     
 });
 
@@ -41,12 +41,10 @@ $(window).scroll(function(){
         nav.eq(5).addClass("active");
     }*/
 
-    for(i = 0; i < 6; i++){
+    for(i=0; i<6; i++){
         if(wScroll >= cont.eq(i).offset().top){
         nav.removeClass("active");
         nav.eq(i).addClass("active");
         }
         }
-
-
 })

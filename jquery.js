@@ -1,4 +1,4 @@
-let nav = $("#nav > ul > li");
+let nav = $("#nav  ul  li");
 let cont = $("#contents > div");
 
 nav.click(function(e){

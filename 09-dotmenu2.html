@@ -89,21 +89,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
-    var dot = $("#dot > ul > li");
-    var cont = $("#contents > div");
+    let dot = $("#dot > ul > li");
+    let cont = $("#contents > div");
 
     dot.click(function(e){
         e.preventDefault();
-        var target = $(this);
-        var index = target.index();
+        let target = $(this);
+        let index = target.index();
         //alert(index);
-        var section = cont.eq(index);
-        var offset = section.offset().top;
+        let section = cont.eq(index);
+        let offset = section.offset().top;
         $("html,body").animate({ scrollTop:offset },600,"easeInOutExpo");
     });
 
     $(window).scroll(function(){
-        var wScroll = $(this).scrollTop();
+        let wScroll = $(this).scrollTop();
         
         if(wScroll >= cont.eq(0).offset().top){
             dot.removeClass("active");
